@@ -31,12 +31,12 @@
               {% endif %}
             </a>
           </li>
-          {% if site.blog_name %}
+          {% if site.projects_name %}
           <!-- Blog -->
-          <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/blog/' | relative_url }}">
-              blog
-              {% if page.title == "blog" %}
+          <li class="nav-item {% if page.url contains 'projects' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/projects/' | relative_url }}">
+              Projects
+              {% if page.title == "Projects" %}
               <span class="sr-only">(current)</span>
               {% endif %}
             </a>
