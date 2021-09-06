@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Final year undergrad @ <a href="bits-pilani.ac.in">BITS, Pilani</a>. Making machines understand us and our world better with machine learning.
+description: Final year undergrad @ <a href="bits-pilani.ac.in">BITS, Pilani</a>. I make machines understand us and our world better.
 
 # profile:
 #   align: right
