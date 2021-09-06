@@ -1,6 +1,6 @@
 ---
-layout: default
-title: blog
+layout: page
+title: Projects
 pagination:
   enabled: true
   collection: posts
@@ -16,8 +16,8 @@ pagination:
 <div class="post">
 
   <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
+    <h1>{{ site.projects_name }}</h1>
+    <!-- <h2>{{ site.projects_description }}</h2> -->
   </div>
 
 
@@ -25,8 +25,7 @@ pagination:
     {% for post in paginator.posts %}
       <li>
         <img align="right" src="{{ post.img | prepend: '/assets/img/' | relative_url }}">
-        <h3><a class="post-title">{{ post.title }}</a></h3>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
+        <h3><a>{{ post.title }}</a></h3>
         <p>{{ post.description }}</p>
       </li>
     {% endfor %}
