@@ -25,7 +25,8 @@ pagination:
     {% for post in paginator.posts %}
       <li>
         {% if post.img != "None.png" %}
-        <img align="right" src="{{ post.img | prepend: '/assets/img/' | relative_url }}" width="400" height="190">
+        <img align="right" src="{{ post.img | prepend: '/assets/img/' | relative_url }}" height="{{post.height}}" width="{{post.height}}"
+        style="padding: {{post.pad-top}} {{post.pad-right}} {{post.pad-bottom}} {{post.pad-left}};}}">
         {% endif %}
         <h3><a>{{ post.title }}</a></h3>
         <p>{{ post.description }}</p>
